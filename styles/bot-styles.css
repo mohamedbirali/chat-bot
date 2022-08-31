@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif,'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: #27e3b7;
+}
+
+/* container  */
+.chat{
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 8px;
+}
+
+/* collapse */
+.chat.collapse{
+    /* same height of chat__header */
+    height: 60px;
+    width: 150px;
+}
+
+.chat__header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: blanchedalmond;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+}
+
+.chat__header .chat__header--title{
+    padding-left: 10px;
+}
+
+.chat__body{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 100%;
+    height: 290px;
+    align-items: flex-end;
+    overflow-y: auto;
+    overflow-x: hidden; 
+    /* position: relative; */
+}
+
+.chat__footer{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    /* border-radius: 0 0 8px 8px; */
+    padding: 8px;
+    border-top: 1px solid #ccc;
+}
+
+.inputSection{
+    flex: 9;
+}
+
+#textInput{
+    line-height: 40px;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    margin-right: 2px;
+    border:none;
+}
+
+.sendBtn{
+    flex: 1;
+    height: 40px;
+    border: none;
+    background-color: aquamarine;
+    border-radius: 10px;
+    font-weight: bold;
+    /* width: 60px; */
+}
+
+
+
+/* animate circles section */
+
+.loading{
+    /* background-color: #06f6c6; */
+    border-radius: 0 8px 8px 8px;
+    display: flex;
+    /* position: absolute; */
+    bottom: 5%;
+    left: 2%;
+    /* z-index: ; */
+    margin-left: 10px;
+}
+
+.chat__header .loading > .circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 4px;
+    background-color: #0c0b0b7e;
+}
+
+.circle-1{
+    animation: showUp 1s ease-in-out 0ms both infinite;
+}
+
+.circle-2{
+    animation: showUp 1s ease-in-out 200ms both infinite;
+}
+
+.circle-3{
+    animation: showUp 1s ease-in-out 400ms both infinite;
+}
+
+/* hide circles by default */
+.hide{
+    display: none !important;
+}
+
+@keyframes showUp {
+    0%{
+        transform: translate(50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+/* *******scrollbar****** */
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(131, 115, 115, 0.318); 
+    border-radius: 10px;
+    opacity: .8px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0505057e; 
+  }
+

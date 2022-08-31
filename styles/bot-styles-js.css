@@ -1,0 +1,58 @@
+/*
+   style classes used in the bot.js file
+*/
+
+ .userMessage,.botMessage{
+   width: max-content;
+   max-width: 200px;
+   padding: 8px;
+   margin-bottom: 4px;
+   word-wrap: break-word;
+ }
+
+ .userMessage{
+    background-color: #ccc;
+    border-radius: 8px 0px 8px 8px;
+    align-self: flex-end;
+ }
+
+ .botMessage{
+    background-color: rgb(180, 250, 224);
+    border-radius: 0px 8px 8px 8px;
+    align-self: flex-start;
+ }
+
+ /* animations */
+ .userMessage{
+   transform: translate(50%);
+   opacity: 0;
+   animation: fade-in-right .3s ease-in-out both;/* we need to define the fade-in-right*/
+ }
+
+ @keyframes fade-in-right {
+   0%{
+      transform: translate(50%);
+      opacity: 0;
+   }
+   100%{
+      transform: translate(0);
+      opacity: 1;
+   }
+ }
+
+ .botMessage{
+   transform: translate(-50%);
+   opacity: 0;
+   animation: fade-in-left .3s ease-in-out both;
+ }
+
+ @keyframes fade-in-left {
+   0%{
+      transform: translate(-50%);
+      opacity: 0;
+   }
+   100%{
+      transform: translate(0);
+      opacity: 1;
+   }
+ }
