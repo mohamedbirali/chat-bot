@@ -1,8 +1,8 @@
 # chat-bot
 A basic chat bot web app is built from scratch with html, css and js with no APIs but it's ready to use an external API.
-Bot will answer if user input contains one of those messages :
+Bot will answer if user input contains one of those keys :
 ```javascript
-`const responseObj = {
+const responseObj = {
     hi: "hii",
     hii: "hii",
     hello: "hello, what's up",
@@ -10,7 +10,7 @@ Bot will answer if user input contains one of those messages :
     hru: "fine",
     "how r u": "fine",
     hhh: "have fun ^^"
-}`
+}
 ```
 ## Benefits
 In this project you learn how to use html/css with javascript.
