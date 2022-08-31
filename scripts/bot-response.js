@@ -6,8 +6,7 @@ const responseObj = {
     hello: "hello, what's up",
     "how are u" : "fine",
     hru: "fine",
-    "how r u": "fine",    
-    hh: "funny hh",
+    "how r u": "fine",
     hhh: "have fun ^^",
     مرحبا: "مرحبا كيف حالك"
 }

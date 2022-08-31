@@ -91,13 +91,10 @@ div.chat._collapse{
 /* animate circles section */
 
 .loading{
-    /* background-color: #06f6c6; */
     border-radius: 0 8px 8px 8px;
     display: flex;
-    /* position: absolute; */
     bottom: 5%;
     left: 2%;
-    /* z-index: ; */
     margin-left: 10px;
 }
 

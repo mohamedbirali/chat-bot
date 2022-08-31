@@ -1,24 +1,5 @@
 /*
-    Used in the html file (index.html) 
-    Classes :
-    .chat
-    .chat__header
-    .chat__header--logo
-    .chat__header--title
-    .chat__body
-    .chat__footer
-    .inputSection
-    .sendBtn
-
-    Ids :
-    #textInput
-*/
-
-/* 
-    used in this file (bot.js) : 
-    Classes :
-    .userMessage
-    . 
+    Version : 1.0
 */
 import botResponseService from './botResponseService.js';
 
@@ -50,16 +31,12 @@ const renderUserMessage = () => {
     const userInput = textInput.value; // recieve user input
     renderMessageElm(userInput, "user"); // send user input
     toggleLoading(false);
-    // setTimeout(()=>{
     renderBotResponse(userInput); // send bot's response
-    // },1000);
-    
 }
 
 // bot response
 const renderBotResponse = (userMsg)=>{
     getChatResponse(userMsg);
-    // renderMessageElm(res, "bot"); // "bot" is optional
 }
 
 // create message element
@@ -83,9 +60,9 @@ const clearInput = () => {
 
 // get a response
 const getChatResponse = (userInput)=>{
-     // we can acces bot-response.js file
+     // we can acces directly the bot-response.js file
     /*
-    return responseObj[userInput] === undefined ? "i dont understand try something else ^^" : responseObj[userInput];
+        return responseObj[userInput] === undefined ? "i dont understand try something else ^^" : responseObj[userInput];
     */ 
     botResponseService.getBotResponse(userInput).then((res)=>{
         if(res === undefined) res = "i dont understand try something else ^^";
