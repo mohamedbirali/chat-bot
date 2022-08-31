@@ -32,7 +32,7 @@ const chat = document.querySelector('.chat');
 
 // expand if toggled
 header.addEventListener('click', ()=>{
-    chat.classList.toggle("collapse");
+    chat.classList.toggle("_collapse");
 })
 
 // send msg on clicking the button

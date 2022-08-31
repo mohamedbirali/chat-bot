@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif,'Courier New', Courier, monospace;
 }
 
-body{
+.body{
     background-color: #27e3b7;
 }
 
@@ -21,7 +21,7 @@ body{
 }
 
 /* collapse */
-.chat.collapse{
+.chat._collapse{
     /* same height of chat__header */
     height: 60px;
     width: 150px;
@@ -117,6 +117,12 @@ body{
 
 .circle-3{
     animation: showUp 1s ease-in-out 400ms both infinite;
+}
+
+.githubIcon{
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
 }
 
 /* hide circles by default */
