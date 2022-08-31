@@ -6,7 +6,7 @@
 }
 
 .body{
-    background-color: #27e3b7;
+    background-color: #b3e7da;
 }
 
 /* container  */
@@ -19,6 +19,15 @@
     right: 30px;
     border-radius: 8px;
     outline: none;
+}
+
+.appName{
+    color: #fff;
+    /* font-size: 20px; */
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 30px;
 }
 
 /* collapse */
@@ -88,6 +97,25 @@ div.chat._collapse{
     /* width: 60px; */
 }
 
+div.logo{
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+.githubIcon{
+    position: absolute;
+    margin-left: 30px;
+    bottom: 20px;
+}
+
+@media screen and (max-width: 700px){
+    .githubIcon{
+        /* left:0; */
+        right: 20px;
+        top:10px;
+    }
+}
 
 
 /* animate circles section */
@@ -120,17 +148,6 @@ div.chat._collapse{
     animation: showUp 1s ease-in-out 400ms both infinite;
 }
 
-.githubIcon{
-    position: absolute;
-    bottom: 20px;
-    left: 30px;
-}
-
-@media screen and (max-width: 768px){
-    .githubIcon{
-        top:10px;
-    }    
-}
 
 /* hide circles by default */
 .hide{
