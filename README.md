@@ -29,5 +29,5 @@ In this project you learn how to use html/css with javascript.
 **botResponseService.js** : fetch the response based on the user message.
 
 ## websites
-You can pull your requests and see results as soon as possible in this website :
+You can pull your requests in order to develop this bot and see results as soon as possible in this website :
 [chat-bot](http://chat-bot.pages.dev/ "chat-bot")
