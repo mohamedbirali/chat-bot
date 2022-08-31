@@ -13,5 +13,5 @@ responseObj = {
     "how r u": "fine",    
     hh: "funny hh",
     hhh: "have fun ^^",
-    مرحبا: "مرحبا مرحبا ياك لاباس"
+    مرحبا: "مرحبا كيف حالك"
 }
