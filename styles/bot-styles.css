@@ -127,6 +127,12 @@ div.chat._collapse{
     left: 30px;
 }
 
+@media screen and (max-width: 768px){
+    .githubIcon{
+        top:10px;
+    }    
+}
+
 /* hide circles by default */
 .hide{
     display: none !important;
