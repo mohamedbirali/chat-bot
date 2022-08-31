@@ -18,10 +18,11 @@
     bottom: 30px;
     right: 30px;
     border-radius: 8px;
+    outline: none;
 }
 
 /* collapse */
-.chat._collapse{
+div.chat._collapse{
     /* same height of chat__header */
     height: 60px;
     width: 150px;
@@ -49,7 +50,8 @@
     align-items: flex-end;
     overflow-y: auto;
     overflow-x: hidden; 
-    /* position: relative; */
+    overflow: hidden;
+    /* position: absolute; */
 }
 
 .chat__footer{
