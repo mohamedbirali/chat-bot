@@ -24,7 +24,8 @@
 .appName{
     color: #fff;
     /* font-size: 20px; */
-    font-weight: bold;
+    font-weight: bolder;
+    font-style: italic;
     position: absolute;
     top: 20px;
     left: 30px;
@@ -91,16 +92,34 @@ div.chat._collapse{
     flex: 1;
     height: 40px;
     border: none;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     border-radius: 10px;
     font-weight: bold;
+    cursor: pointer;
     /* width: 60px; */
+}
+
+.logo img{
+    width: 250px;
+    height: 250px;
 }
 
 div.logo{
     position: absolute;
-    left: 5%;
-    top: 10%;
+    top: 25% ;
+    left: 40% ;
+}
+
+@media screen and (max-width: 768px){
+    .logo img{
+        width: 125px;
+        height: 125px;
+    }
+    
+    div.logo{
+        left: (100% - 125px)/2;
+        top: (100% - 125px)/2;
+    }
 }
 
 .githubIcon{
